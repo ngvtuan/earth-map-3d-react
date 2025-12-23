@@ -1,6 +1,6 @@
 <div align=center>
 
-  [<img height="100px" src="./dist/lumera.svg"/>](https://lumera.io/)
+  [<img height="100px" src="https://raw.githubusercontent.com/ngvtuan/earth-map-3d-react/refs/heads/main/public/lumera.svg"/>](https://lumera.io/)
 
 </div>
 
