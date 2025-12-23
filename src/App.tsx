@@ -66,7 +66,6 @@ function App() {
       <NetworkOverview
         countryEdges={countryEdges}
         countries={countries}
-        textureBackground='/textures/land_ocean_ice_cloud_2048.jpg'
       />
     </div>
   );

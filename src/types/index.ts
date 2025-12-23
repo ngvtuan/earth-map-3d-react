@@ -48,7 +48,6 @@ export  interface AnimatedEdgeProps {
 export interface IEarthScene {
   countries: CountryData[];
   countryEdges: CountryEdgeData[];
-  textureBackground: string;
   badgeColor?: string;
   badgeBg?: string;
   lineColor?: string;
@@ -61,7 +60,6 @@ export interface INetworkOverview {
   countries: CountryData[];
   countryEdges: CountryEdgeData[];
   className?: string;
-  textureBackground: string;
   badgeColor?: string;
   badgeBg?: string;
   lineColor?: string;

@@ -7,7 +7,6 @@ import EarthScene from './EarthScene';
 export default function NetworkOverview({
   countries,
   countryEdges,
-  textureBackground,
   className = 'w-full h-[600px]',
   badgeColor = '#fff',
   badgeBg = '#078a8a',
@@ -22,7 +21,6 @@ export default function NetworkOverview({
         <EarthScene
           countries={countries}
           countryEdges={countryEdges}
-          textureBackground={textureBackground}
           badgeColor={badgeColor}
           badgeBg={badgeBg}
           lineColor={lineColor}

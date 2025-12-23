@@ -31,8 +31,8 @@ yarn add earth-map-3d-react
 
 ## Issues
 
-Please, open an [issue](https://github.com/LumeraProtocol/earth-map-3d-react/issues) following one of the issues templates. We will do our best to fix them.
+Please, open an [issue](https://github.com/ngvtuan/earth-map-3d-react/issues) following one of the issues templates. We will do our best to fix them.
 
 ## License
 
-Distributed under the MIT license. See [LICENSE](LICENSE) for more information.
+Distributed under the MIT license. See [LICENSE](https://github.com/ngvtuan/earth-map-3d-react/blob/main/LICENSE) for more information.

@@ -7,11 +7,11 @@ import FlagNode from './FlagNode';
 import AnimatedEdge from './AnimatedEdge';
 import { latLngToVector3 } from '../utils/geo';
 import { IEarthScene } from '../types';
+import landOceanIceCloud from '../assets/images/land_ocean_ice_cloud_2048.jpg';
 
 export default function EarthScene({
   countries,
   countryEdges,
-  textureBackground,
   badgeColor = '#fff',
   badgeBg = '#078a8a',
   lineColor = '#fff',
@@ -21,7 +21,7 @@ export default function EarthScene({
 }: IEarthScene) {
   const earthRef = useRef<THREE.Group>(null);
   const [isRotating, setIsRotating] = useState(true);
-  const earthTexture = useTexture(textureBackground);
+  const earthTexture = useTexture(landOceanIceCloud);
   const countryPositions: THREE.Vector3[] = countries.map((country) =>
     latLngToVector3(country.avgLat, country.avgLng)
   );
