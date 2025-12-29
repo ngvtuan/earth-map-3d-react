@@ -2,7 +2,7 @@
   "name": "earth-map-3d-react",
   "version": "0.0.2",
   "description": ".",
-  "author": "Lumera Protocol",
+  "author": "ngvtuan",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -51,5 +51,14 @@
     "vite": "^7.2.2",
     "vite-plugin-dts": "^4.5.4",
     "vite-plugin-node-polyfills": "^0.24.0"
-  }
+  },
+  "keywords": [
+    "earth-map-3d-react",
+    "earth map",
+    "3d",
+    "react",
+    "Earth 3D Map",
+    "World Map in 3D",
+    "Earth 3D", "3D Map"
+  ],
 }
