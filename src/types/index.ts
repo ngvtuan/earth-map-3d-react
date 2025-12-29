@@ -34,6 +34,8 @@ export interface FlagNodeProps {
   countryCode: string;
   badgeColor?: string;
   badgeBg?: string;
+  countFont?: string;
+  countryFont?: string;
   onFlagClick: (countryCode: string) => void;
 }
 
@@ -53,6 +55,8 @@ export interface IEarthScene {
   lineColor?: string;
   lineOpacity?: number;
   materialColor?: string;
+  countFont?: string;
+  countryFont?: string;
   onFlagClick?: (countryCode: string) => void;
 }
 
@@ -65,5 +69,9 @@ export interface INetworkOverview {
   lineColor?: string;
   lineOpacity?: number;
   materialColor?: string;
+  fov?: number;
+  position?: [x: number, y: number, z: number];
+  countFont?: string;
+  countryFont?: string;
   onFlagClick?: (countryCode: string) => void;
 }

@@ -17,6 +17,8 @@ export default function EarthScene({
   lineColor = '#fff',
   lineOpacity = 0.3,
   materialColor = '#47c78a',
+  countFont = 'bold 100px Arial',
+  countryFont = 'bold 60px Arial',
   onFlagClick,
 }: IEarthScene) {
   const earthRef = useRef<THREE.Group>(null);
@@ -65,6 +67,8 @@ export default function EarthScene({
             countryCode={country.code}
             badgeColor={badgeColor}
             badgeBg={badgeBg}
+            countFont={countFont}
+            countryFont={countryFont}
             onFlagClick={handleFlagClick}
           />
         ))}
