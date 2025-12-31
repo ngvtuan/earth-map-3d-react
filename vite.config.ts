@@ -2,18 +2,10 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import { resolve } from 'path';
-import { nodePolyfills } from 'vite-plugin-node-polyfills';
 
 export default defineConfig({
   plugins: [
     react(),
-    nodePolyfills({
-      include: ['buffer', 'assert', 'net', 'http', 'events', 'url', 'stream', 'zlib', 'crypto', 'console', 'querystring'],
-      protocolImports: true,
-      globals: {
-        Buffer: true,
-      },
-    }),
     dts({
       rollupTypes: true,
       tsconfigPath: './tsconfig.app.json',
@@ -41,7 +33,7 @@ export default defineConfig({
           'react-dom': 'ReactDOM',
         },
         assetFileNames: (assetInfo) => {
-          const isImage = assetInfo.name?.endsWith('.svg') || assetInfo.name?.endsWith('.png');
+          const isImage = assetInfo.name?.endsWith('.svg') || assetInfo.name?.endsWith('.png') || assetInfo.name?.endsWith('.jpg');
           if (isImage) {
             return 'assets/[name]-[hash][extname]';
           }
