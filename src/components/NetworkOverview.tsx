@@ -20,7 +20,7 @@ export function NetworkOverview({
   onFlagClick,
 }: INetworkOverview) {
   return (
-    <div className={className} style={{ width: '100%', height: '600px' }}>
+    <div className={className}>
       <Canvas camera={{ position, fov }}>
         <EarthScene
           countries={countries}
