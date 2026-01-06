@@ -19,6 +19,8 @@ export default function EarthScene({
   materialColor = '#47c78a',
   countFont = 'bold 100px Arial',
   countryFont = 'bold 60px Arial',
+  minDistance = 8,
+  maxDistance = 15,
   onFlagClick,
 }: IEarthScene) {
   const earthRef = useRef<THREE.Group>(null);
@@ -94,7 +96,13 @@ export default function EarthScene({
         })}
       </group>
 
-      <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
+      <OrbitControls
+        enablePan={true}
+        enableZoom={true}
+        enableRotate={true}
+        minDistance={minDistance}
+        maxDistance={maxDistance}
+      />
     </>
   );
 }

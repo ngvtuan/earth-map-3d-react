@@ -57,6 +57,8 @@ export interface IEarthScene {
   materialColor?: string;
   countFont?: string;
   countryFont?: string;
+  minDistance?: number;
+  maxDistance?: number;
   onFlagClick?: (countryCode: string) => void;
 }
 
@@ -73,5 +75,7 @@ export interface INetworkOverview {
   position?: [x: number, y: number, z: number];
   countFont?: string;
   countryFont?: string;
+  minDistance?: number;
+  maxDistance?: number;
   onFlagClick?: (countryCode: string) => void;
 }

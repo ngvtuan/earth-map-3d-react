@@ -17,6 +17,8 @@ export function NetworkOverview({
   position = [0, 0, 10],
   countFont = 'bold 100px Arial',
   countryFont = 'bold 60px Arial',
+  minDistance = 8,
+  maxDistance = 15,
   onFlagClick,
 }: INetworkOverview) {
   return (
@@ -32,6 +34,8 @@ export function NetworkOverview({
           materialColor={materialColor}
           countFont={countFont}
           countryFont={countryFont}
+          minDistance={minDistance}
+          maxDistance={maxDistance}
           onFlagClick={onFlagClick}
         />
       </Canvas>
