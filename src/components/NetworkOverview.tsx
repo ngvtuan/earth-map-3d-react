@@ -19,6 +19,9 @@ export function NetworkOverview({
   countryFont = 'bold 60px Arial',
   minDistance = 8,
   maxDistance = 15,
+  enablePan = false,
+  enableZoom = true,
+  enableRotate = true,
   onFlagClick,
 }: INetworkOverview) {
   return (
@@ -36,6 +39,9 @@ export function NetworkOverview({
           countryFont={countryFont}
           minDistance={minDistance}
           maxDistance={maxDistance}
+          enablePan={enablePan}
+          enableZoom={enableZoom}
+          enableRotate={enableRotate}
           onFlagClick={onFlagClick}
         />
       </Canvas>

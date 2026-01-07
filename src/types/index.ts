@@ -59,6 +59,9 @@ export interface IEarthScene {
   countryFont?: string;
   minDistance?: number;
   maxDistance?: number;
+  enablePan?: boolean;
+  enableZoom?: boolean;
+  enableRotate?: boolean;
   onFlagClick?: (countryCode: string) => void;
 }
 
@@ -77,5 +80,8 @@ export interface INetworkOverview {
   countryFont?: string;
   minDistance?: number;
   maxDistance?: number;
+  enablePan?: boolean;
+  enableZoom?: boolean;
+  enableRotate?: boolean;
   onFlagClick?: (countryCode: string) => void;
 }

@@ -21,6 +21,9 @@ export default function EarthScene({
   countryFont = 'bold 60px Arial',
   minDistance = 8,
   maxDistance = 15,
+  enablePan = false,
+  enableZoom = true,
+  enableRotate = true,
   onFlagClick,
 }: IEarthScene) {
   const earthRef = useRef<THREE.Group>(null);
@@ -97,9 +100,9 @@ export default function EarthScene({
       </group>
 
       <OrbitControls
-        enablePan={true}
-        enableZoom={true}
-        enableRotate={true}
+        enablePan={enablePan}
+        enableZoom={enableZoom}
+        enableRotate={enableRotate}
         minDistance={minDistance}
         maxDistance={maxDistance}
       />
